@@ -1,0 +1,18 @@
+body {
+  font-family: Georgia, serif;
+  font-size: 15px;
+  /*line-height: 1rem;*/
+  color: #000;
+  word-wrap: break-word;
+  width: 100%;
+}
+
+/*.container {*/
+/*  font-family: 'Roboto', sans-serif;*/
+/*  display: grid;*/
+/*  background: #16151C;*/
+/*  grid-template-columns: auto;*/
+/*  grid-template-rows: 48px 702px;*/
+/*  grid-template-areas: "header "*/
+/*                        "section-1";*/
+/*}*/
