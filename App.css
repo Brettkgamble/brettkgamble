@@ -3,7 +3,7 @@ body {
   font-size: 15px;
   /*line-height: 1rem;*/
   color: #000;
-  word-wrap: break-word;
+  overflow-wrap: break-word;
   width: 100%;
 }
 

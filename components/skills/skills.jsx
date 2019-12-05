@@ -148,7 +148,7 @@ const Skills = () => (
                 <li>Beg</li>
             </ul>
         </div>
-        <div className={classes.arch}>
+        <div className={classes.arch_end}>
             <div className={classes.figure}>
                 <div className={classes.architecture}>
                     <p>Architecture</p>

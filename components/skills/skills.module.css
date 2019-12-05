@@ -2,20 +2,25 @@
   font-family: Roboto;
   display: grid;
   background: white;
-  grid-template-columns: 15% repeat(4, auto);
-  grid-template-rows: 5vh 20vh;
-  grid-template-areas: "head head head head head"
-                       "skills frontend programming data architecture";
-}
-
-@media (max-width: 40rem) {
-  .container {
   grid-template-rows: 5vh 20vh 20vh;
   grid-template-areas: "head head"
                        "skills frontend"
                        "skills2 programming"
                        "skills3 data"
-                       "skills4 architecture"
+                       "skills4 architecture";
+  }
+
+@media  (min-width: 44rem) and (min-height: 30rem) {
+  .container {
+    font-family: Roboto;
+    display: grid;
+    background: white;
+    width: 80%;
+    padding-left: 5%;
+    grid-template-columns: 15% repeat(4, auto);
+    grid-template-rows: 5vh 20vh;
+    grid-template-areas: "head head head head head"
+                         "skills frontend programming data architecture";
   }
 }
 
@@ -55,7 +60,7 @@
     text-align: left;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 44rem) {
   .resume_skills_data {
     display: none;
   }
@@ -67,7 +72,7 @@
     text-align: left;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 44rem) {
   .resume_skills_arch {
     display: none;
   }
@@ -158,9 +163,15 @@
   position: relative;
 }
 
-.arch {
+.arch_end {
   grid-area: architecture;
-  padding-right: 20%;
+}
+
+@media  (min-width: 44rem) and (min-height: 30rem) {
+  .arch_end {
+    grid-area: architecture;
+    padding-right: 20%;
+  }
 }
 
 .architecture {
@@ -215,16 +226,21 @@
   background: url("../../static/images/graph_sprite.png") 0px 0px no-repeat;
 }
 
-.figure > div.frontend .graph_header.dark {
+
+@media (min-width: 44rem) {
+  .figure > div.frontend .graph_header.dark {
     border-right: 15px solid #ff3f18;
+  }
 }
 
 .figure > div.frontend .graph_header {
   background-color: #f77c7f;
 }
 
-.figure > div.programming .graph_header.dark {
-  border-right: 15px solid #ffb317;
+@media (min-width: 44rem) {
+  .figure > div.programming .graph_header.dark {
+    border-right: 15px solid #ffb317;
+  }
 }
 
 .figure > div.programming .graph_header {
@@ -235,18 +251,21 @@
   background-color: #ffdd4d;
 }
 
-.figure > div.dataengineering .graph_header.dark {
-  border-right: 15px solid #c1e31a;
+@media (min-width: 44rem) {
+  .figure > div.dataengineering .graph_header.dark {
+    border-right: 15px solid #c1e31a;
+  }
 }
 
 .figure > div.architecture .graph_header {
   background-color: #26c6d6;
 }
 
-.figure > div.architecture .graph_header.dark {
-  border-right: 15px solid #4fabec;
+@media (min-width: 44rem) {
+  .figure > div.architecture .graph_header.dark {
+    border-right: 15px solid #4fabec;
+  }
 }
-
 
 
 .figure .bar .graph_header {

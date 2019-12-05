@@ -1,21 +1,26 @@
 .container {
   font-family: Roboto;
-  /*margin-top: 56px;*/
   display: grid;
   background: white;
-  grid-template-columns: 15% repeat(3, auto);
-  grid-template-rows: 5vh 20vh;
-  grid-template-areas: "head head head head "
-                       "skills analysis manage stuff";
-}
-
-@media (max-width: 40rem) {
-  .container {
   grid-template-rows: 5vh 20vh 20vh;
   grid-template-areas: "head head"
                        "skills analysis"
                        "skills2 manage"
                        "skills3 stuff"
+                        "skills4 vacant";
+}
+
+@media  (min-width: 44rem) and (min-height: 30rem) {
+  .container {
+    font-family: Roboto;
+    display: grid;
+    background: white;
+    width: 80%;
+    padding-left: 5%;
+    grid-template-columns: 15% repeat(4, auto);
+    grid-template-rows: 5vh 20vh;
+    grid-template-areas: "head head head head head"
+                        "skills analysis manage stuff vacant";
   }
 }
 
@@ -24,7 +29,7 @@
 }
 
 .resume {
-  grid-column: span 4;
+  grid-column: span 6;
   position: relative;
   border-top: 1px dotted #d7d7d7;
   margin: 10px 0 20px 0;
@@ -43,7 +48,7 @@
     text-align: left;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 44rem) {
   .resume_skills_manage {
     display: none;
   }
@@ -55,7 +60,7 @@
     text-align: left;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 44rem) {
   .resume_skills_stuff {
     display: none;
   }
@@ -63,7 +68,7 @@
 
 .resume_skills ul,
 .resume_skills_stuff ul,
-.resume_skills_data ul,
+.resume_skills_analysis ul,
 .resume_skills_manage ul{
   padding: 0px;
   margin: 20px 0 0 0;
@@ -71,7 +76,7 @@
 
 .resume_skills  ul li,
 .resume_skills_stuff ul li,
-.resume_skills_data ul li,
+.resume_skills_analysis ul li,
 .resume_skills_manage ul li{
   list-style-type: none;
   text-align: right;
@@ -113,8 +118,14 @@
   text-align: center;
 }
 
-.analysis_end {
+.figure {
+  margin: 0px auto;
+  width: 100%;
+}
+
+.analy {
   grid-area: analysis;
+  padding-right:20%;
 }
 
 .analysis {
@@ -124,9 +135,30 @@
   position: relative;
 }
 
+.analysis_end {
+  grid-area: analysis;
+}
+
 .stuff {
   grid-area: stuff;
-  padding-right: 20%
+  padding-right:20%;
+}
+
+/*.stuff {*/
+/*  margin-top: 25px;*/
+/*  font-size: 0.75rem;*/
+/*  position: relative;*/
+/*}*/
+
+.stuff_end {
+  grid-area: stuff;
+}
+
+@media  (min-width: 44rem) and (min-height: 30rem) {
+  .stuff_end {
+    grid-area: stuff;
+    padding-right: 20%;
+  }
 }
 
 .other {
@@ -136,12 +168,12 @@
   position: relative;
 }
 
-.data {
-  grid-area: data;
+.mng {
+  grid-area: manage;
+  /*padding-right:20%;*/
 }
 
-.dataengineering {
-  grid-area: data;
+.manage {
   margin-top: 25px;
   font-size: 0.75rem;
   position: relative;
@@ -151,11 +183,6 @@
   grid-area: manage;
 }
 
-.manage {
-  grid-area: manage;
-
-}
-
 .management {
   grid-area: manage;
   margin-top: 25px;
@@ -163,14 +190,9 @@
   position: relative;
 }
 
-.figure {
-  margin: 0px auto;
-  width: 100%;
-}
-
-.figure > div.frontend .bar {
-  width: 14%;
-}
+/*.figure > div.analysis .bar {*/
+/*  width: 14%;*/
+/*}*/
 
 .figure p {
   position: absolute;
@@ -198,32 +220,42 @@
   z-index: 300;
 }
 
-.figure > div.analysis .graph_header.dark {
+@media (min-width: 44rem) {
+  .figure > div.analysis .graph_header.dark {
     border-right: 15px solid #ff3f18;
+  }
 }
 
 .figure > div.analysis .graph_header {
   background-color: #f77c7f;
 }
 
-.figure > div.other .graph_header {
-  background-color: #fd835e;
-}
-
-.figure > div.other .graph_header.dark {
-    border-right: 15px solid #ffb317;
-}
-
-.figure > div.dataengineering .graph_header {
-  background-color: #ffdd4d;
+.figure > div.manage .bar {
+    width: 14%;
 }
 
 .figure > div.management .graph_header {
   background-color: #26c6d6;
 }
 
-.figure > div.management .graph_header.dark {
+@media (min-width: 44rem) {
+  .figure > div.management .graph_header.dark {
     border-right: 15px solid #4fabec;
+  }
+}
+
+.figure > div.other .bar {
+  width: 14%;
+}
+
+.figure > div.other .graph_header {
+  background-color: #fd835e;
+}
+
+@media (min-width: 44rem) {
+  .figure > div.other .graph_header.dark {
+    border-right: 15px solid #ffb317;
+  }
 }
 
 .figure .bar .graph_header {
@@ -293,3 +325,4 @@
     bottom: 0px;
     left: 3px;
 }
+
