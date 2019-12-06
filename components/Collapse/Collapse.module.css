@@ -1,0 +1,337 @@
+.container {
+  font-family: Roboto;
+  display: grid;
+  background: white;
+  grid-template-rows: 5vh 20vh 20vh;
+  grid-template-areas: "head head"
+                       "skills frontend"
+                       "skills2 programming"
+                       "skills3 data"
+                       "skills4 architecture";
+  }
+
+@media  (min-width: 44rem) and (min-height: 30rem) {
+  .container {
+    font-family: Roboto;
+    display: grid;
+    background: white;
+    width: 80%;
+    padding-left: 5%;
+    grid-template-columns: 15% repeat(4, auto);
+    grid-template-rows: 5vh 20vh;
+    grid-template-areas: "head head head head head"
+                         "skills frontend programming data architecture";
+  }
+}
+
+.p {
+  margin: 0 0 8px 0;
+}
+
+.resume {
+  grid-column: span 6;
+  position: relative;
+  border-top: 1px dotted #d7d7d7;
+  margin: 10px 0 20px 0;
+  padding-top: 35px
+}
+
+.resume_skills {
+  grid-area: skills;
+  float: left;
+  text-align: left;
+}
+
+.resume_skills_programming {
+  grid-area: skills2;
+    float: left;
+    text-align: left;
+}
+
+@media (min-width: 40rem) {
+  .resume_skills_programming {
+    display: none;
+  }
+}
+
+.resume_skills_data {
+  grid-area: skills3;
+    float: left;
+    text-align: left;
+}
+
+@media (min-width: 44rem) {
+  .resume_skills_data {
+    display: none;
+  }
+}
+
+.resume_skills_arch {
+  grid-area: skills4;
+    float: left;
+    text-align: left;
+}
+
+@media (min-width: 44rem) {
+  .resume_skills_arch {
+    display: none;
+  }
+}
+
+.resume_skills ul,
+.resume_skills_programming ul,
+.resume_skills_data ul,
+.resume_skills_arch ul{
+  padding: 0px;
+  margin: 20px 0 0 0;
+}
+
+.resume_skills  ul li,
+.resume_skills_programming ul li,
+.resume_skills_data ul li,
+.resume_skills_arch ul li{
+  list-style-type: none;
+  text-align: right;
+  height: 1.1rem;
+  margin: 0 0.6rem 0 0;
+  padding-right: 0.6rem;
+  font-family: Roboto;
+  font-size: 0.65rem;
+  /*font-style: italic;*/
+  font-weight: bold;
+  background: url("../../static/images/dash.jpg") no-repeat 100% 50%;
+}
+
+.section_label__left, .section_label__right {
+  color: #fff;
+  background-color: #000;
+  letter-spacing: 0.125rem;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.75rem;
+  z-index: 100;
+  position: absolute;
+  top: -0.1rem;
+}
+
+.section_label__right {
+  /*right: 5%;*/
+}
+
+.label__right {
+  position: absolute;
+  top: -0.3rem;
+  right: 0px;
+  font-size: 1.6rem;
+  letter-spacing: 0.25rem;
+  color: white;
+  background: black;
+  padding: 1rem;
+  width: 6rem;
+  text-align: center;
+}
+
+.frontend_end {
+  grid-area: frontend;
+}
+
+.frontend {
+  /*grid-area: frontend;*/
+  margin-top: 25px;
+  font-size: 0.75rem;
+  position: relative;
+}
+
+.program {
+  grid-area: programming;
+}
+
+.programming {
+  grid-area: programming;
+  margin-top: 25px;
+  font-size: 0.75rem;
+  position: relative;
+}
+
+.data {
+  grid-area: data;
+}
+
+.dataengineering {
+  grid-area: data;
+  margin-top: 25px;
+  font-size: 0.75rem;
+  position: relative;
+}
+
+.arch_end {
+  grid-area: architecture;
+}
+
+@media  (min-width: 44rem) and (min-height: 30rem) {
+  .arch_end {
+    grid-area: architecture;
+    padding-right: 20%;
+  }
+}
+
+.architecture {
+  grid-area: data;
+  margin-top: 25px;
+  font-size: 0.75rem;
+  position: relative;
+}
+
+.figure {
+  margin: 0px auto;
+  width: 100%;
+}
+
+.figure > div.frontend .bar {
+  width: 14%;
+}
+
+.figure p {
+  position: absolute;
+  top: 62px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  line-height: 1.5rem;
+  color: #000;
+  font-family: 'Roboto Light', sans-serif;
+  font-size: 0.6rem;
+  font-weight: bold;
+  z-index: 100;
+  padding: 0px;
+}
+
+.figure .bar {
+  display: table-cell;
+  vertical-align: top;
+  padding: 0px;
+  /*font-style: italic;*/
+  font-size: 0.6rem;
+  font-weight: 400;
+  text-align: center;
+  z-index: 300;
+}
+
+.figure > div .expert {
+  height: 98px;
+  width: 0.45rem;
+  margin: 0 auto;
+  border: 0px;
+  text-align: center;
+  position: relative;
+  background: url("../../static/images/graph_sprite.png") 0px 0px no-repeat;
+}
+
+
+@media (min-width: 44rem) {
+  .figure > div.frontend .graph_header.dark {
+    border-right: 15px solid #ff3f18;
+  }
+}
+
+.figure > div.frontend .graph_header {
+  background-color: #f77c7f;
+}
+
+@media (min-width: 44rem) {
+  .figure > div.programming .graph_header.dark {
+    border-right: 15px solid #ffb317;
+  }
+}
+
+.figure > div.programming .graph_header {
+  background-color: #fd835e;
+}
+
+.figure > div.dataengineering .graph_header {
+  background-color: #ffdd4d;
+}
+
+@media (min-width: 44rem) {
+  .figure > div.dataengineering .graph_header.dark {
+    border-right: 15px solid #c1e31a;
+  }
+}
+
+.figure > div.architecture .graph_header {
+  background-color: #26c6d6;
+}
+
+@media (min-width: 44rem) {
+  .figure > div.architecture .graph_header.dark {
+    border-right: 15px solid #4fabec;
+  }
+}
+
+
+.figure .bar .graph_header {
+  position: absolute;
+  top: 74px;
+  height: 18px;
+  left: 0px;
+  right: 0px;
+}
+
+.figure > div .beginner.alt {
+  height: 115px;
+}
+
+.figure > div .beginner {
+  height: 98px;
+  width: 0.45rem;
+  margin: 0 auto;
+  border: 0px;
+  text-align: center;
+  position: relative;
+  background: url("../../static/images/graph_sprite.png") -75px 0px no-repeat;
+}
+
+.figure > div .beginner.alt div {
+    position: absolute;
+    bottom: 0px;
+    left: 3px;
+}
+
+.figure > div .intermediate.alt {
+  height: 115px;
+}
+
+.figure > div .intermediate {
+  height: 98px;
+  width: 0.45rem;
+  margin: 0 auto;
+  border: 0px;
+  text-align: center;
+  position: relative;
+  background: url("../../static/images/graph_sprite.png") -50px 0px no-repeat;
+}
+
+.figure > div .intermediate.alt div {
+    position: absolute;
+    bottom: 0px;
+    left: 3px;
+}
+
+.figure > div .advanced.alt {
+  height: 115px;
+}
+
+.figure > div .advanced {
+  height: 98px;
+  width: 0.45rem;
+  margin: 0 auto;
+  border: 0px;
+  text-align: center;
+  position: relative;
+  background: url("../../static/images/graph_sprite.png") -25px 0px no-repeat;
+}
+
+.figure > div .advanced.alt div {
+    position: absolute;
+    bottom: 0px;
+    left: 3px;
+}

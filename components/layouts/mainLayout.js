@@ -4,6 +4,7 @@ import css from './Main.css';
 import Head from 'next/head'
 import Skills from "../skills/skills";
 import NonTechnicalSkills from "../non-technical-skills/nontechskills";
+import SimpleCollapse from "../Collapse/Collapse";
 
 const MainLayout = (props) => (
     <>
@@ -17,8 +18,16 @@ const MainLayout = (props) => (
             </style>
         </Head>
         <HeaderComponent />
-        <Skills />
-        <NonTechnicalSkills />
+        <SimpleCollapse
+            collapseComponent={<Skills/>}
+            sectionlabel={'Show Technical Skills'}
+        />
+         <SimpleCollapse
+            collapseComponent={<NonTechnicalSkills/>}
+            sectionlabel={'Show Non-Technical Skills'}
+        />
+        {/* <Skills/>*/}
+        {/*<NonTechnicalSkills />*/}
     </>
 )
 

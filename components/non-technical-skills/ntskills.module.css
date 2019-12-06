@@ -15,8 +15,8 @@
     font-family: Roboto;
     display: grid;
     background: white;
-    width: 80%;
-    padding-left: 5%;
+    /*width: 80%;*/
+    padding-left: 2%;
     grid-template-columns: 15% repeat(4, auto);
     grid-template-rows: 5vh 20vh;
     grid-template-areas: "head head head head head"
