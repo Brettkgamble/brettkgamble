@@ -1,0 +1,32 @@
+.container {
+  font-family: Roboto;
+    display: grid;
+    background: white;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(1, auto);
+    grid-auto-columns: auto;
+  }
+
+
+
+@media  (min-width: 44rem) and (min-height: 30rem) {
+  .container {
+    font-family: Roboto;
+    display: grid;
+    background: white;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-auto-columns: auto;
+  }
+}
+
+@media  (min-width: 80rem) and (min-height: 30rem) {
+  .container {
+    font-family: Roboto;
+    display: grid;
+    background: white;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-auto-columns: auto;
+  }
+}
