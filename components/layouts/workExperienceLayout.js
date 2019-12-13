@@ -1,16 +1,17 @@
 import React, { Fragment } from 'react';
-import CrossFit5413 from "../workExperience/Crossfit5413";
 import classes from './workExperienceLayout.module.css';
+import RecipeReviewCard from "../workExperience/recipeReviewCard";
+import Crossfit5413Card from "../workExperience/crossfit5413Card";
 
 const WorkExperienceLayout = () => (
     <Fragment >
         <div className={classes.container}>
-            <CrossFit5413 />
-             <CrossFit5413 />
-              <CrossFit5413 />
-               <CrossFit5413 />
-                <CrossFit5413 />
-                 <CrossFit5413 />
+            <Crossfit5413Card />
+             <RecipeReviewCard />
+              <RecipeReviewCard />
+               <RecipeReviewCard />
+                <RecipeReviewCard />
+                 <RecipeReviewCard />
         </div>
     </Fragment>
 )

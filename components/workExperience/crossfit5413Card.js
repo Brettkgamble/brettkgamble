@@ -36,10 +36,11 @@ const useStyles = makeStyles(theme => ({
   },
   avatar: {
     backgroundColor: red[500],
+    fontSize: '0.6rem',
   },
 }));
 
-export default function WorkExperiecnceCard() {
+export default function Crossfit5413Card() {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -51,8 +52,8 @@ export default function WorkExperiecnceCard() {
     <Card className={classes.card}>
       <CardHeader
         avatar={
-          <Avatar aria-label="recipe" className={classes.avatar}>
-            R
+          <Avatar aria-label="brief" className={classes.avatar}>
+            Forging <br /> &nbsp; Elite <br /> Fitness
           </Avatar>
         }
         action={
@@ -60,18 +61,20 @@ export default function WorkExperiecnceCard() {
             <MoreVertIcon />
           </IconButton>
         }
-        title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
+        title="CrossFit 5413"
+        subheader="September 2016 to August 2019"
       />
       <CardMedia
         className={classes.media}
-        image="/static/images/cards/paella.jpg"
+        image="/static/images/workExperience/Compass_rose_vector_v5.png"
         title="Paella dish"
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          This impressive paella is a perfect party dish and a fun meal to cook together with your
-          guests. Add 1 cup of frozen peas along with the mussels, if you like.
+          As the owner, I converted the 12,500 sq. ft space into a functional fitness gym
+          with a focus on CrossFit, Olympic / Power lifting, personal training and massage services.
+          <br /> <br />I obtained funding from savings, ATB,& BDC and built the business to have more
+          than 180 members over the period of 3 years.  
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
