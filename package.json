@@ -38,6 +38,7 @@
     "react": "^16.11.0",
     "react-bootstrap": "^1.0.0-beta.14",
     "react-dom": "^16.11.0",
+    "react-modal": "^3.11.1",
     "scroll-to": "0.0.2",
     "serialize-javascript": ">=2.1.1",
     "styled-components": "^4.4.1",
