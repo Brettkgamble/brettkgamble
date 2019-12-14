@@ -44,7 +44,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function CanadaNorthCard() {
+export default function Crossfit5413Card() {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
   const [showModal, setShowmodal] = React.useState(false);
@@ -70,8 +70,8 @@ export default function CanadaNorthCard() {
             <MoreVertIcon />
           </IconButton>
         }
-        title="CrossFit 5413"
-        subheader="September 2016 to August 2019"
+        title="Canada North Camps"
+        subheader="August 2015 to June 2016"
       />
       <CardContent>
             <Typography variant="subtitle2" color="textSecondary">

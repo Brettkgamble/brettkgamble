@@ -30,6 +30,7 @@ const Summary = () => (
           </Typography>
         </CardContent>
     </div>
+
 );
 
 export default Summary;

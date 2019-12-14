@@ -44,7 +44,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function CanadaNorthCard() {
+export default function AlbertaMunicipalAffairsCard() {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
   const [showModal, setShowmodal] = React.useState(false);
@@ -60,7 +60,7 @@ export default function CanadaNorthCard() {
   return (
     <Card className={classes.card}>
       <CardHeader
-           avatar={
+       avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
             R
           </Avatar>
@@ -70,8 +70,8 @@ export default function CanadaNorthCard() {
             <MoreVertIcon />
           </IconButton>
         }
-        title="CrossFit 5413"
-        subheader="September 2016 to August 2019"
+        title="Alberta Municipal Affairs"
+        subheader="March 2007 to July 2010"
       />
       <CardContent>
             <Typography variant="subtitle2" color="textSecondary">

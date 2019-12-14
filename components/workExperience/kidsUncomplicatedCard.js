@@ -44,7 +44,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function CanadaNorthCard() {
+export default function KidsUncomplicatedCard() {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
   const [showModal, setShowmodal] = React.useState(false);
@@ -70,8 +70,8 @@ export default function CanadaNorthCard() {
             <MoreVertIcon />
           </IconButton>
         }
-        title="CrossFit 5413"
-        subheader="September 2016 to August 2019"
+        title="Kids Uncomplicated"
+        subheader="August 2014 to May 2015"
       />
       <CardContent>
             <Typography variant="subtitle2" color="textSecondary">
