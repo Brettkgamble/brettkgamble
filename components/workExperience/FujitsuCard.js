@@ -44,7 +44,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function Crossfit5413Card() {
+export default function FujitsuCard() {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
   const [showModal, setShowmodal] = React.useState(false);
@@ -60,7 +60,7 @@ export default function Crossfit5413Card() {
   return (
     <Card className={classes.card}>
       <CardHeader
-           avatar={
+       avatar={
           <Avatar aria-label="workExperience" className={classes.avatar}
              src="../../static/images/flags/canada.png"
              title="Canada">
@@ -71,8 +71,8 @@ export default function Crossfit5413Card() {
             <MoreVertIcon />
           </IconButton>
         }
-        title="Canada North Camps"
-        subheader="August 2015 to June 2016"
+        title="Fujitsu Consulting"
+        subheader="July 2003 to June 2005"
       />
       <CardContent>
             <Typography variant="subtitle2" color="textSecondary">

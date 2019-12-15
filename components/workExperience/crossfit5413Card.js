@@ -61,8 +61,9 @@ export default function CanadaNorthCard() {
     <Card className={classes.card}>
       <CardHeader
            avatar={
-          <Avatar aria-label="recipe" className={classes.avatar}>
-            R
+          <Avatar aria-label="workExperience" className={classes.avatar}
+             src="../../static/images/flags/canada.png"
+             title="Canada">
           </Avatar>
         }
         action={

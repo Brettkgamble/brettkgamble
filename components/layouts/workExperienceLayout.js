@@ -6,6 +6,17 @@ import CanadaNorthCard from "../workExperience/canadaNorthCard";
 import KidsUncomplicatedCard from "../workExperience/kidsUncomplicatedCard";
 import CrossFitAuroraCard from "../workExperience/crossFitAuroraCard";
 import AlbertaMunicipalAffairsCard from "../workExperience/albertaMunicipalAffairsCard";
+import TelusCard from "../workExperience/telus";
+import FujitsuCard from "../workExperience/FujitsuCard";
+import KidtropolisCard from "../workExperience/KidtropolisCard";
+import CGICard from "../workExperience/cgi";
+import OrangeCard from "../workExperience/OrangeCard";
+import VenteloCard from "../workExperience/VenteloCard";
+import USInteractiveCard from "../workExperience/USInteractiveCard";
+import SavilleSystemsCard from "../workExperience/SavilleSystemsCard";
+import OptusCard from "../workExperience/OptusCard";
+import Alcatel from "../workExperience/Alcatel";
+import {ActionAccessibility} from "material-ui/svg-icons/index.es";
 
 const WorkExperienceLayout = () => (
     <Fragment >
@@ -15,6 +26,16 @@ const WorkExperienceLayout = () => (
             <KidsUncomplicatedCard/>
             <CrossFitAuroraCard />
             <AlbertaMunicipalAffairsCard />
+            <TelusCard />
+            <CGICard />
+            <KidtropolisCard />
+            <FujitsuCard />
+            <OrangeCard />
+            <VenteloCard/>
+            <USInteractiveCard />
+            <SavilleSystemsCard/>
+            <OptusCard/>
+            <Alcatel/>
         </div>
     </Fragment>
 )
