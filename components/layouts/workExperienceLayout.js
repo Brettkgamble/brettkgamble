@@ -16,7 +16,6 @@ import USInteractiveCard from "../workExperience/USInteractiveCard";
 import SavilleSystemsCard from "../workExperience/SavilleSystemsCard";
 import OptusCard from "../workExperience/OptusCard";
 import Alcatel from "../workExperience/Alcatel";
-import {ActionAccessibility} from "material-ui/svg-icons/index.es";
 
 const WorkExperienceLayout = () => (
     <Fragment >
