@@ -16,7 +16,7 @@ import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import Modal from '../Modal/Modal';
-import Summary from "./Summaries/summary";
+import CrossFit5413 from "./Summaries/summary";
 
 
 
@@ -104,7 +104,7 @@ export default function KidsUncomplicatedCard() {
               <Modal
                   show={showModal}
                   modalClosed={handleModal}>
-                    <Summary />
+                    <CrossFit5413 />
               </Modal>
       </CardContent>
     </Card>

@@ -7,6 +7,8 @@ class Modal extends Component {
     componentDidUpdate(){
         if (this.props.show){
             document.body.style.overflowY = 'hidden';
+        } else {
+            document.body.style.overflowY = 'visible';
         }
     }
 

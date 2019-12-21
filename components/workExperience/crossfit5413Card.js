@@ -16,7 +16,7 @@ import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import Modal from '../Modal/Modal';
-import Summary from "./Summaries/summary";
+import CrossFit5413Summary from "./Summaries/CrossFit5413Summary";
 
 
 
@@ -104,7 +104,7 @@ export default function CanadaNorthCard() {
               <Modal
                   show={showModal}
                   modalClosed={handleModal}>
-                    <Summary />
+                    <CrossFit5413Summary />
               </Modal>
       </CardContent>
     </Card>

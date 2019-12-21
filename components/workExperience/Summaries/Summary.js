@@ -1,9 +1,10 @@
 import React from 'react';
 import Typography from "@material-ui/core/Typography";
 import CardContent from "@material-ui/core/CardContent";
+import Paper from '@material-ui/core/Paper';
 
-const Summary = () => (
-    <div>
+const CrossFit5413Summary = () => (
+    <Paper >
         <CardContent>
           <Typography paragraph>Method:</Typography>
           <Typography paragraph>
@@ -29,8 +30,8 @@ const Summary = () => (
             Set aside off of the heat to let rest for 10 minutes, and then serve.
           </Typography>
         </CardContent>
-    </div>
+    </Paper>
 
 );
 
-export default Summary;
+export default CrossFit5413Summary;
