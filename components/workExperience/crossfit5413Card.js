@@ -92,7 +92,7 @@ export default function CanadaNorthCard() {
             <Typography variant="body2" color="textSecondary" component="ul">
                 <li>Founded CrossFit 5413 as the largest CrossFit facility in Edmonton</li>
                 <li>Integrated 10 professional fitness trainers and coaches</li>
-                <li>Built in-house welness services (massage, nutrition)</li>
+                <li>Built in-house wellness services (massage, nutrition)</li>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
                 < br />

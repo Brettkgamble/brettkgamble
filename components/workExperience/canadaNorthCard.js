@@ -16,7 +16,7 @@ import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import Modal from '../Modal/Modal';
-import CrossFit5413 from "./Summaries/summary";
+import CanadaNorthCampsSummary from "./Summaries/CanadaNorthCampsSummary";
 
 
 
@@ -79,9 +79,8 @@ export default function Crossfit5413Card() {
             <strong>Core Accomplishments</strong>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="ul">
-                <li>0 to 150 members in 2 years</li>
-                <li>0 to $250k in revenue in 2 years</li>
-                <li>Redeveloped building to comply with local safety codes</li>
+                <li>Project Managed the movement of the Water Treatment Plant 'Borealis' from Suncor to a CNC owned site.</li>
+                <li>Implemented a pilot project for the 'Odoo' Inventory Management system</li>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
                 < br />
@@ -90,9 +89,8 @@ export default function Crossfit5413Card() {
               <strong>Professional Accomplishments</strong>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="ul">
-                <li>Founded CrossFit 5413 as the largest CrossFit facility in Edmonton</li>
-                <li>Integrated 10 professional fitness trainers and coaches</li>
-                <li>Built in-house welness services (massage, nutrition)</li>
+                <li>Managed a diverse team of drivers, admin, and professional staff</li>
+                <li>Project Management of a large transportation project</li>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
                 < br />
@@ -104,7 +102,7 @@ export default function Crossfit5413Card() {
               <Modal
                   show={showModal}
                   modalClosed={handleModal}>
-                    <CrossFit5413 />
+                    <CanadaNorthCampsSummary />
               </Modal>
       </CardContent>
     </Card>
