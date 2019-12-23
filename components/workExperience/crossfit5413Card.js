@@ -75,6 +75,9 @@ export default function CanadaNorthCard() {
         subheader="September 2016 to August 2019"
       />
       <CardContent>
+          <Typography variant="subtitle1" component ="h2">
+              <strong>Owner & Founder</strong>
+          </Typography>
             <Typography variant="subtitle2" color="textSecondary">
             <strong>Core Accomplishments</strong>
             </Typography>
@@ -97,7 +100,9 @@ export default function CanadaNorthCard() {
             <Typography variant="body2" color="textSecondary" component="p">
                 < br />
             </Typography>
-          <Typography onClick={handleModal} variant="body2" color="textSecondary" component="p">
+      </CardContent>
+        <CardActions >
+            <Typography onClick={handleModal} variant="body2" color="textSecondary" component="p">
                 Read More <strong>Here</strong>
             </Typography>
           {/*<button onClick={handleModal}>Read more here</button>*/}
@@ -106,7 +111,7 @@ export default function CanadaNorthCard() {
                   modalClosed={handleModal}>
                     <CrossFit5413Summary />
               </Modal>
-      </CardContent>
+        </CardActions>
     </Card>
   );
 }

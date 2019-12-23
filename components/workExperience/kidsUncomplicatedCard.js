@@ -16,9 +16,7 @@ import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import Modal from '../Modal/Modal';
-import CrossFit5413 from "./Summaries/summary";
-
-
+import KidsUncomplicatedSummary from "./Summaries/KidsUncomplicatedSummary";
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -72,16 +70,19 @@ export default function KidsUncomplicatedCard() {
           </IconButton>
         }
         title="Kids Uncomplicated"
-        subheader="August 2014 to May 2015"
+           subheader="August 2014 to May 2015"
       />
       <CardContent>
+          <Typography variant="subtitle1" component ="h2">
+          <strong>Information Technology Lead</strong>
+          </Typography>
             <Typography variant="subtitle2" color="textSecondary">
-            <strong>Core Accomplishments</strong>
+            <strong>Provided Consultancy</strong>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="ul">
-                <li>0 to 150 members in 2 years</li>
-                <li>0 to $250k in revenue in 2 years</li>
-                <li>Redeveloped building to comply with local safety codes</li>
+                <li>to secure Eureka NRC Funding</li>
+                <li>to secure Tech Edmonton Grant Funding</li>
+                <li>to assist in the development of a Computer Vision application</li>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
                 < br />
@@ -90,23 +91,24 @@ export default function KidsUncomplicatedCard() {
               <strong>Professional Accomplishments</strong>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="ul">
-                <li>Founded CrossFit 5413 as the largest CrossFit facility in Edmonton</li>
-                <li>Integrated 10 professional fitness trainers and coaches</li>
-                <li>Built in-house welness services (massage, nutrition)</li>
+                <li>Grant application writing</li>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
                 < br />
             </Typography>
-          <Typography onClick={handleModal} variant="body2" color="textSecondary" component="p">
+
+      </CardContent>
+        <CardActions>
+            <Typography onClick={handleModal} variant="body2" color="textSecondary" component="p">
                 Read More <strong>Here</strong>
             </Typography>
           {/*<button onClick={handleModal}>Read more here</button>*/}
               <Modal
                   show={showModal}
                   modalClosed={handleModal}>
-                    <CrossFit5413 />
+                    <KidsUncomplicatedSummary />
               </Modal>
-      </CardContent>
+        </CardActions>
     </Card>
   );
 }

@@ -75,6 +75,9 @@ export default function Crossfit5413Card() {
         subheader="August 2015 to June 2016"
       />
       <CardContent>
+          <Typography variant="subtitle1" component ="h2">
+          <strong>Manager, Transportation & Logistics</strong>
+          </Typography>
             <Typography variant="subtitle2" color="textSecondary">
             <strong>Core Accomplishments</strong>
             </Typography>
@@ -93,9 +96,11 @@ export default function Crossfit5413Card() {
                 <li>Project Management of a large transportation project</li>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-                < br />
+                < br />< br />
             </Typography>
-          <Typography onClick={handleModal} variant="body2" color="textSecondary" component="p">
+      </CardContent>
+        <CardActions>
+            <Typography onClick={handleModal} variant="body2" color="textSecondary" component="p">
                 Read More <strong>Here</strong>
             </Typography>
           {/*<button onClick={handleModal}>Read more here</button>*/}
@@ -104,7 +109,7 @@ export default function Crossfit5413Card() {
                   modalClosed={handleModal}>
                     <CanadaNorthCampsSummary />
               </Modal>
-      </CardContent>
+        </CardActions>
     </Card>
   );
 }
