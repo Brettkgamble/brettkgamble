@@ -16,7 +16,7 @@ import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import Modal from '../Modal/Modal';
-import CrossFit5413 from "./Summaries/summary";
+import AlbertaMunicipalAffairsSummary from "./Summaries/AlbertaMunicipalAffairsSummary";
 
 
 
@@ -75,13 +75,16 @@ export default function AlbertaMunicipalAffairsCard() {
         subheader="March 2007 to July 2010"
       />
       <CardContent>
+          <Typography variant="subtitle1" component ="h2">
+          <strong>Manager, I.T Architecture & Planning</strong>
+          </Typography>
             <Typography variant="subtitle2" color="textSecondary">
             <strong>Core Accomplishments</strong>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="ul">
-                <li>0 to 150 members in 2 years</li>
-                <li>0 to $250k in revenue in 2 years</li>
-                <li>Redeveloped building to comply with local safety codes</li>
+                <li>Development: 7 point 5 year strategic plan</li>
+                <li>Dev. & Implement: IT Tactical Plan</li>
+                <li>Dev. & Implement: IT Governance Processes</li>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
                 < br />
@@ -90,9 +93,9 @@ export default function AlbertaMunicipalAffairsCard() {
               <strong>Professional Accomplishments</strong>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="ul">
-                <li>Founded CrossFit 5413 as the largest CrossFit facility in Edmonton</li>
-                <li>Integrated 10 professional fitness trainers and coaches</li>
-                <li>Built in-house welness services (massage, nutrition)</li>
+                <li>Set Ministry I.T direction and strategy, preparing information technology
+                strategic and tactical plans and developing I.T Enterprise Architecture.</li>
+                <li>Implemented overall Ministry I.T Governance Structures based on COBIT</li>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
                 < br />
@@ -104,7 +107,7 @@ export default function AlbertaMunicipalAffairsCard() {
               <Modal
                   show={showModal}
                   modalClosed={handleModal}>
-                    <CrossFit5413 />
+                    <AlbertaMunicipalAffairsSummary />
               </Modal>
       </CardContent>
     </Card>
