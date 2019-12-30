@@ -16,8 +16,7 @@ import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import Modal from '../Modal/Modal';
-import CrossFit5413 from "./Summaries/summary";
-
+import TelusSummary from "./Summaries/TelusSummary";
 
 
 const useStyles = makeStyles(theme => ({
@@ -44,7 +43,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function CGICard() {
+export default function TelusCard() {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
   const [showModal, setShowmodal] = React.useState(false);
@@ -71,17 +70,18 @@ export default function CGICard() {
             <MoreVertIcon />
           </IconButton>
         }
-        title="CGI"
-        subheader="January 2006 to July 2006"
+        title="Telus Telecommunications"
+        subheader="July 2006 to March 2007"
       />
       <CardContent>
+          <Typography variant="subtitle1" component ="h2">
+          <strong>Senior Business Analyst</strong>
+          </Typography>
             <Typography variant="subtitle2" color="textSecondary">
             <strong>Core Accomplishments</strong>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="ul">
-                <li>0 to 150 members in 2 years</li>
-                <li>0 to $250k in revenue in 2 years</li>
-                <li>Redeveloped building to comply with local safety codes</li>
+                <li>Systems Lead for Project Horizon</li>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
                 < br />
@@ -90,9 +90,7 @@ export default function CGICard() {
               <strong>Professional Accomplishments</strong>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="ul">
-                <li>Founded CrossFit 5413 as the largest CrossFit facility in Edmonton</li>
-                <li>Integrated 10 professional fitness trainers and coaches</li>
-                <li>Built in-house welness services (massage, nutrition)</li>
+                <li>Senior Business Analyst for several projects overseen by the Business Process Reengineering Team</li>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
                 < br />
@@ -104,7 +102,7 @@ export default function CGICard() {
               <Modal
                   show={showModal}
                   modalClosed={handleModal}>
-                    <CrossFit5413 />
+                    <TelusSummary />
               </Modal>
       </CardContent>
     </Card>

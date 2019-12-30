@@ -16,7 +16,7 @@ import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import Modal from '../Modal/Modal';
-import CrossFit5413 from "./Summaries/summary";
+import CGISummary from "./Summaries/CGISummary";
 
 
 
@@ -44,7 +44,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function TelusCard() {
+export default function CGICard() {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
   const [showModal, setShowmodal] = React.useState(false);
@@ -71,17 +71,18 @@ export default function TelusCard() {
             <MoreVertIcon />
           </IconButton>
         }
-        title="Telus Telecommunications"
-        subheader="July 2006 to April 2007"
+        title="CGI"
+        subheader="January 2006 to July 2006"
       />
       <CardContent>
+          <Typography variant="subtitle1" component ="h2">
+          <strong>Team Lead</strong>
+          </Typography>
             <Typography variant="subtitle2" color="textSecondary">
             <strong>Core Accomplishments</strong>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="ul">
-                <li>0 to 150 members in 2 years</li>
-                <li>0 to $250k in revenue in 2 years</li>
-                <li>Redeveloped building to comply with local safety codes</li>
+                <li>Successfully implemented a 3 month agile software development project</li>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
                 < br />
@@ -90,9 +91,8 @@ export default function TelusCard() {
               <strong>Professional Accomplishments</strong>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="ul">
-                <li>Founded CrossFit 5413 as the largest CrossFit facility in Edmonton</li>
-                <li>Integrated 10 professional fitness trainers and coaches</li>
-                <li>Built in-house welness services (massage, nutrition)</li>
+                <li>Successful project implementation using Agile methodology and a Java framework</li>
+                <li>Project Management</li>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
                 < br />
@@ -104,7 +104,7 @@ export default function TelusCard() {
               <Modal
                   show={showModal}
                   modalClosed={handleModal}>
-                    <CrossFit5413 />
+                    <CGISummary />
               </Modal>
       </CardContent>
     </Card>
