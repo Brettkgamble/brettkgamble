@@ -16,7 +16,7 @@ import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import Modal from '../Modal/Modal';
-import KidTropolisSummary from "./Summaries/KidTropolisSummary";
+import Fujitsu2Summary from "./Summaries/Fujitsu2Summary";
 
 
 
@@ -44,7 +44,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function KidtropolisCard() {
+export default function Fujitsu2Card() {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
   const [showModal, setShowmodal] = React.useState(false);
@@ -71,20 +71,18 @@ export default function KidtropolisCard() {
             <MoreVertIcon />
           </IconButton>
         }
-        title="Kidtropolis"
-        subheader="July 2005 to September 2005"
+        title="Fujitsu Consulting"
+        subheader="January 2003 to June 2003"
       />
       <CardContent>
-           <Typography variant="subtitle1" component ="h2">
-          <strong>General Manager</strong>
+          <Typography variant="subtitle1" component ="h2">
+          <strong>Functional Analyst</strong>
           </Typography>
             <Typography variant="subtitle2" color="textSecondary">
             <strong>Core Accomplishments</strong>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="ul">
-                <li>Creation of organizational structure</li>
-                <li>Creation of educational programming</li>
-                <li>Development of operational reporting</li>
+                <li>Creation of a data migration plan for the migration of data to a new Pension Plan Management System</li>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
                 < br />
@@ -93,8 +91,7 @@ export default function KidtropolisCard() {
               <strong>Professional Accomplishments</strong>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="ul">
-                <li>Management of 50+ Staff</li>
-                <li>Successful post-launch growth as a startup</li>
+                <li>General Consultancy</li>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
                 < br />
@@ -106,7 +103,7 @@ export default function KidtropolisCard() {
               <Modal
                   show={showModal}
                   modalClosed={handleModal}>
-                    <KidTropolisSummary />
+                    <Fujitsu2Summary />
               </Modal>
       </CardContent>
     </Card>

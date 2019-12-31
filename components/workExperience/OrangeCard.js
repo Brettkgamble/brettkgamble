@@ -16,7 +16,7 @@ import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import Modal from '../Modal/Modal';
-import CrossFit5413 from "./Summaries/summary";
+import OrangeSummary from "./Summaries/OrangeSummary";
 
 
 
@@ -72,16 +72,20 @@ export default function OrangeCard() {
           </IconButton>
         }
         title="Orange Telecommunications"
-        subheader="June 2002 to May 2003"
+        subheader="January 2002 to December 2002"
       />
       <CardContent>
+          <Typography variant="subtitle1" component ="h2">
+          <strong>Business Analyst</strong>
+          </Typography>
             <Typography variant="subtitle2" color="textSecondary">
             <strong>Core Accomplishments</strong>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="ul">
-                <li>0 to 150 members in 2 years</li>
-                <li>0 to $250k in revenue in 2 years</li>
-                <li>Redeveloped building to comply with local safety codes</li>
+                <li>Proposal for a Customer Services Center of Excellence</li>
+                <li>Developed system based product rules for effective technical communication</li>
+                <li>Represented Customer Service and Billing Operations for Peoplesoft proof of concept</li>
+                <li>Delivered a current versus desired state process document that outlined critical Use Cases for Customer Services for both a call center and external High Street locations.</li>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
                 < br />
@@ -90,9 +94,8 @@ export default function OrangeCard() {
               <strong>Professional Accomplishments</strong>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="ul">
-                <li>Founded CrossFit 5413 as the largest CrossFit facility in Edmonton</li>
-                <li>Integrated 10 professional fitness trainers and coaches</li>
-                <li>Built in-house welness services (massage, nutrition)</li>
+                <li>General Business Consultancy</li>
+                <li>Business Analysis</li>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
                 < br />
@@ -104,7 +107,7 @@ export default function OrangeCard() {
               <Modal
                   show={showModal}
                   modalClosed={handleModal}>
-                    <CrossFit5413 />
+                    <OrangeSummary />
               </Modal>
       </CardContent>
     </Card>

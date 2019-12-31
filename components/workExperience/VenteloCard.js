@@ -16,7 +16,7 @@ import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import Modal from '../Modal/Modal';
-import CrossFit5413 from "./Summaries/summary";
+import VenteloSummary from "./Summaries/VenteloSummary";
 
 
 
@@ -71,17 +71,18 @@ export default function VenteloCard() {
             <MoreVertIcon />
           </IconButton>
         }
-        title="Ventelo /GTS  Telecommunications"
-        subheader="September 2000 to May 2002"
+        title="Ventelo /GTS  Telecoms"
+        subheader="Sept. 2000 to December 2001"
       />
       <CardContent>
+          <Typography variant="subtitle1" component ="h2">
+          <strong>Business / Systems Analyst</strong>
+          </Typography>
             <Typography variant="subtitle2" color="textSecondary">
             <strong>Core Accomplishments</strong>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="ul">
-                <li>0 to 150 members in 2 years</li>
-                <li>0 to $250k in revenue in 2 years</li>
-                <li>Redeveloped building to comply with local safety codes</li>
+                <li>Migration of 7 billing systems to the Euro Currency</li>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
                 < br />
@@ -90,9 +91,10 @@ export default function VenteloCard() {
               <strong>Professional Accomplishments</strong>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="ul">
-                <li>Founded CrossFit 5413 as the largest CrossFit facility in Edmonton</li>
-                <li>Integrated 10 professional fitness trainers and coaches</li>
-                <li>Built in-house welness services (massage, nutrition)</li>
+                <li>Project Management</li>
+                <li>Business Analysis</li>
+                <li>Systems Analysis</li>
+                <li>Telecom Billing System Subject Matter Expert</li>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
                 < br />
@@ -104,7 +106,7 @@ export default function VenteloCard() {
               <Modal
                   show={showModal}
                   modalClosed={handleModal}>
-                    <CrossFit5413 />
+                    <VenteloSummary />
               </Modal>
       </CardContent>
     </Card>

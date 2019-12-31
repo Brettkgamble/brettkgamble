@@ -16,6 +16,7 @@ import USInteractiveCard from "../workExperience/USInteractiveCard";
 import SavilleSystemsCard from "../workExperience/SavilleSystemsCard";
 import OptusCard from "../workExperience/OptusCard";
 import Alcatel from "../workExperience/Alcatel";
+import Fujitsu2Card from "../workExperience/Fujitsu2Card";
 
 const WorkExperienceLayout = () => (
     <Fragment >
@@ -29,6 +30,7 @@ const WorkExperienceLayout = () => (
             <CGICard />
             <KidtropolisCard />
             <FujitsuCard />
+            <Fujitsu2Card />
             <OrangeCard />
             <VenteloCard/>
             <USInteractiveCard />

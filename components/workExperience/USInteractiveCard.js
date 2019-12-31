@@ -16,7 +16,7 @@ import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import Modal from '../Modal/Modal';
-import CrossFit5413 from "./Summaries/summary";
+import USInteractiveSummary from "./Summaries/USInteractiveSummary";
 
 
 
@@ -75,13 +75,16 @@ export default function USInteractiveCard() {
         subheader="September 1999 - August 2000"
       />
       <CardContent>
+          <Typography variant="subtitle1" component ="h2">
+          <strong>Business Analyst</strong>
+          </Typography>
             <Typography variant="subtitle2" color="textSecondary">
             <strong>Core Accomplishments</strong>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="ul">
-                <li>0 to 150 members in 2 years</li>
-                <li>0 to $250k in revenue in 2 years</li>
-                <li>Redeveloped building to comply with local safety codes</li>
+                <li>Successful design of a hook from a billing system into a CRM system with close to zero latency.</li>
+                <li>Worked in two foreign countries where I did not know the language (India & Germany)</li>
+                <li>Worked on a team made up of contractors from 4 non-english speaking countries</li>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
                 < br />
@@ -90,9 +93,8 @@ export default function USInteractiveCard() {
               <strong>Professional Accomplishments</strong>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="ul">
-                <li>Founded CrossFit 5413 as the largest CrossFit facility in Edmonton</li>
-                <li>Integrated 10 professional fitness trainers and coaches</li>
-                <li>Built in-house welness services (massage, nutrition)</li>
+                <li>Lived in multiple countries with significantly different cultures</li>
+
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
                 < br />
@@ -104,7 +106,7 @@ export default function USInteractiveCard() {
               <Modal
                   show={showModal}
                   modalClosed={handleModal}>
-                    <CrossFit5413 />
+                    <USInteractiveSummary />
               </Modal>
       </CardContent>
     </Card>
