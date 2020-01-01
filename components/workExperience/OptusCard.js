@@ -16,7 +16,7 @@ import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import Modal from '../Modal/Modal';
-import CrossFit5413 from "./Summaries/summary";
+import OptusSummary from "./Summaries/OptusSummary";
 
 
 
@@ -75,13 +75,18 @@ export default function OptusCard() {
         subheader="June 1993 - August 1998"
       />
       <CardContent>
+          <Typography variant="subtitle1" component ="h2">
+          <strong>Various Analysis and Engineering Roles</strong>
+          </Typography>
             <Typography variant="subtitle2" color="textSecondary">
             <strong>Core Accomplishments</strong>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="ul">
-                <li>0 to 150 members in 2 years</li>
-                <li>0 to $250k in revenue in 2 years</li>
-                <li>Redeveloped building to comply with local safety codes</li>
+                <li>Successful management of high value Service Provider Accounts - $6oom Annually</li>
+                <li>Identification and analysis of Industry wide billing issues ("Baby Accounts")</li>
+                <li>Development of Technical Audit Process for Central Offices</li>
+                <li>Network Translations for Nortel DMS switching equipment</li>
+                <li>Network Translations for Nortel ESN switching Equipment</li>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
                 < br />
@@ -90,9 +95,9 @@ export default function OptusCard() {
               <strong>Professional Accomplishments</strong>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="ul">
-                <li>Founded CrossFit 5413 as the largest CrossFit facility in Edmonton</li>
-                <li>Integrated 10 professional fitness trainers and coaches</li>
-                <li>Built in-house welness services (massage, nutrition)</li>
+                <li>Successful transition from Engineering to Audit</li>
+                <li>Developed inhouse systm to manage and report on billing issues</li>
+                <li>Achieved world best practices for Service Provider Management</li>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
                 < br />
@@ -104,7 +109,7 @@ export default function OptusCard() {
               <Modal
                   show={showModal}
                   modalClosed={handleModal}>
-                    <CrossFit5413 />
+                    <OptusSummary />
               </Modal>
       </CardContent>
     </Card>
