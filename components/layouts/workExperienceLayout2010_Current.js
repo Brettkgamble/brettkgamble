@@ -18,7 +18,7 @@ import OptusCard from "../workExperience/OptusCard";
 import AlcatelCard from "../workExperience/AlcatelCard";
 import Fujitsu2Card from "../workExperience/Fujitsu2Card";
 
-const WorkExperienceLayout = () => (
+const WorkExperienceLayout2010_Current = () => (
     <Fragment >
         <div className={classes.container}>
             <CurrentCard />
@@ -26,20 +26,8 @@ const WorkExperienceLayout = () => (
             <CanadaNorthCard />
             <KidsUncomplicatedCard/>
             <CrossFitAuroraCard />
-            <AlbertaMunicipalAffairsCard />
-            <TelusCard />
-            <CGICard />
-            <KidtropolisCard />
-            <FujitsuCard />
-            <Fujitsu2Card />
-            <OrangeCard />
-            <VenteloCard/>
-            <USInteractiveCard />
-            <SavilleSystemsCard/>
-            <OptusCard/>
-            <AlcatelCard/>
         </div>
     </Fragment>
 )
 
-export default WorkExperienceLayout;
+export default WorkExperienceLayout2010_Current;
