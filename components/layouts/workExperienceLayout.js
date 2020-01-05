@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import classes from './workExperienceLayout.module.css';
-import RecipeReviewCard from "../workExperience/recipeReviewCard";
+import CurrentCard from "../workExperience/CurrentCard";
 import Crossfit5413Card from "../workExperience/crossfit5413Card";
 import CanadaNorthCard from "../workExperience/canadaNorthCard";
 import KidsUncomplicatedCard from "../workExperience/kidsUncomplicatedCard";
@@ -15,12 +15,13 @@ import VenteloCard from "../workExperience/VenteloCard";
 import USInteractiveCard from "../workExperience/USInteractiveCard";
 import SavilleSystemsCard from "../workExperience/SavilleSystemsCard";
 import OptusCard from "../workExperience/OptusCard";
-import Alcatel from "../workExperience/Alcatel";
+import AlcatelCard from "../workExperience/AlcatelCard";
 import Fujitsu2Card from "../workExperience/Fujitsu2Card";
 
 const WorkExperienceLayout = () => (
     <Fragment >
         <div className={classes.container}>
+            <CurrentCard />
             <Crossfit5413Card />
             <CanadaNorthCard />
             <KidsUncomplicatedCard/>
@@ -36,7 +37,7 @@ const WorkExperienceLayout = () => (
             <USInteractiveCard />
             <SavilleSystemsCard/>
             <OptusCard/>
-            <Alcatel/>
+            <AlcatelCard/>
         </div>
     </Fragment>
 )

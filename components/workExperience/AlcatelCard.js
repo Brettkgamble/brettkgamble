@@ -75,13 +75,15 @@ export default function AlcatelCard() {
         subheader="January 1986 - May 1993"
       />
       <CardContent>
+          <Typography variant="subtitle1" component ="h2">
+          <strong>Technical Officer: Test Engineering</strong>
+          </Typography>
             <Typography variant="subtitle2" color="textSecondary">
             <strong>Core Accomplishments</strong>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="ul">
-                <li>0 to 150 members in 2 years</li>
-                <li>0 to $250k in revenue in 2 years</li>
-                <li>Redeveloped building to comply with local safety codes</li>
+                <li>Test Engineer on Alcatel System 12 Exchange Equipment</li>
+                <li>Test Engineer on Ericsson AXE Exchange Equipment</li>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
                 < br />
@@ -90,16 +92,14 @@ export default function AlcatelCard() {
               <strong>Professional Accomplishments</strong>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="ul">
-                <li>Founded CrossFit 5413 as the largest CrossFit facility in Edmonton</li>
-                <li>Integrated 10 professional fitness trainers and coaches</li>
-                <li>Built in-house welness services (massage, nutrition)</li>
+                <li>Completion of Diploma in Electronics Engineering (Telecommunications)</li>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
                 < br />
             </Typography>
-          <Typography onClick={handleModal} variant="body2" color="textSecondary" component="p">
-                Read More <strong>Here</strong>
-            </Typography>
+          {/*<Typography onClick={handleModal} variant="body2" color="textSecondary" component="p">*/}
+          {/*      Read More <strong>Here</strong>*/}
+          {/*  </Typography>*/}
           {/*<button onClick={handleModal}>Read more here</button>*/}
               <Modal
                   show={showModal}
