@@ -23,7 +23,7 @@ const MainLayout = (props) => (
             <meta property="og:locale" content="en_US" />
             <meta property="og:title" content="Brett Gamble Resume and Portfolio" />
             <meta property="og:type" content="Website" />
-            <meta property="og:url" content="http://localhost:3000" />
+            <meta property="og:url" content={`${props.baseUrl}`} />
             <meta property="og:description" content="Welcome to my Resume and Portfolio Website" />
             <style>
                 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
