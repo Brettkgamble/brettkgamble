@@ -45,7 +45,7 @@ class HeaderComponent extends Component {
                 {/*    <img src="../../static/images/Head_shot_sketch05x.png" alt="Brett Gamble" className={css.header__image}/>*/}
                 {/*</div>*/}
                 <div className={css.header}>
-                        <h3>Brett Gamble</h3>
+                        <h3>Brett Gamble!</h3>
                         <h4>Junior Technology Consultant <br />Data Engineer</h4>
                 </div>
                 <div className={css.scrollDownBtn}>
