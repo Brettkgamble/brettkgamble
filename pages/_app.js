@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import App, { Container as NextContainer } from 'next/app';
 
-import auth0Serv from '../lib/appAuth';
+//import auth0Serv from '../lib/appAuth';
 import MainLayout from "../components/layouts/mainLayout";
 import classes from '../App.css';
 
@@ -16,24 +16,20 @@ class MyApp extends App {
 
   static async getInitialProps(appContext) {
 
-     let userAuth = {};
-     userAuth = await auth0Serv.isAuthenticated(appContext.ctx.req);
 
     // calls page's `getInitialProps` and fills `appProps.pageProps`
     const appProps = await App.getInitialProps(appContext);
 
-    return { ...appProps, userAuth }
+    return { ...appProps}
+
   }
 
   render() {
 
-    const { Component, pageProps, userAuth, muiTheme } = this.props;
+    const { Component, pageProps, muiTheme } = this.props;
 
     const headerStyle = pageProps.headerStyle ? pageProps.headerStyle : '';
     const pageConfigs = pageProps.pageConfigs ? pageProps.pageConfigs : null;
-
-    // console.log(this.props.userAuth)
-      // <MuiThemeProvider muiTheme={muiTheme}>;
 
     return (
           <MainLayout>
