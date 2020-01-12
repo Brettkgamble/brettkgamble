@@ -12,12 +12,15 @@ class MyApp extends App {
     // calls page's `getInitialProps` and fills `appProps.pageProps`
     const appProps = await App.getInitialProps(appContext);
 
+    let baseUrl = publicRuntimeConig.base_url;
+
     return { ...appProps}
   }
 
   render() {
     return (
-          <MainLayout>
+          <MainLayout
+            baseUrl={baseUrl}>
           </MainLayout>
     )
   }
