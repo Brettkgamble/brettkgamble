@@ -16,9 +16,6 @@ import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import Modal from '../Modal/Modal';
-import CrossFit5413 from "./Summaries/summary";
-
-
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -101,11 +98,11 @@ export default function AlcatelCard() {
           {/*      Read More <strong>Here</strong>*/}
           {/*  </Typography>*/}
           {/*<button onClick={handleModal}>Read more here</button>*/}
-              <Modal
-                  show={showModal}
-                  modalClosed={handleModal}>
-                    <CrossFit5413 />
-              </Modal>
+          {/*    <Modal*/}
+          {/*        show={showModal}*/}
+          {/*        modalClosed={handleModal}>*/}
+          {/*          <CrossFit5413 />*/}
+          {/*    </Modal>*/}
       </CardContent>
     </Card>
   );
