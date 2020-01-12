@@ -4,10 +4,12 @@ const withPlugins = require('next-compose-plugins');
 const webpack = require('webpack');
 const optimizedImages = require('next-optimized-images');
 
+let BASE_URL = process.env.NODE_ENV !== 'production' ? 'http://localhost:3000' : process.env.PROD_URL;
+
 const cssConfig = {cssModules: true}
 const nextConfig = {
   publicRuntimeConfig: {
-    base_url: process.env.BASE_URL
+    base_url: BASE_URL
   },
   webpack(config)  {
     config.plugins.push(new webpack.EnvironmentPlugin(localEnv))
