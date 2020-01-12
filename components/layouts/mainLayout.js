@@ -21,7 +21,7 @@ const MainLayout = (props) => (
             <meta name="keywords" content="Brett Gamble, resume, portfolio, react, nextjs, Edmonton
                         developer, frontend" />
             <meta property="og:locale" content="en_US" />
-            <meta property="og:title" content="Brett Gamble Resume and Portfolio " />
+            <meta property="og:title" content="Brett Gamble Resume and Portfolio" />
             <meta property="og:type" content="Website" />
             <meta property="og:url" content="http://localhost:3000" />
             <meta property="og:description" content="Welcome to my Resume and Portfolio Website" />
