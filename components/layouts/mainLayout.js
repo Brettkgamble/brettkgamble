@@ -14,7 +14,7 @@ import WorkExperienceLayout1985_1998 from "./workExperienceLayout1985_1998";
 
 const trackingId = "UA-156008837-1";
 ReactGA.initialize(trackingId);
-ReactGA.pageview(window.location.pathname + window.location.search);
+// ReactGA.pageview(window.location.pathname + window.location.search);
 
 
 const MainLayout = (props) => (
