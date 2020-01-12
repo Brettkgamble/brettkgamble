@@ -1,7 +1,9 @@
 import React from 'react'
 import App from 'next/app';
-
+import getConfig from 'next/config';
 import MainLayout from "../components/layouts/mainLayout";
+
+const { publicRuntimeConfig } = getConfig();
 
 class MyApp extends App {
 
