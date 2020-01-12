@@ -47,7 +47,7 @@ class HeaderComponent extends Component {
                 {/*</div>*/}
                 <div className={css.header}>
                         <h3>Brett Gamble</h3>
-                        <h4>Technology Consultant <br />Data Engineer</h4>
+                        <h6>Technology Consultant <br />React / NextJS Developer <br />Data Engineer</h6>
                 </div>
                 <div className={css.scrollDownBtn}>
 
