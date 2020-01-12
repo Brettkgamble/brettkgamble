@@ -6,9 +6,7 @@ const axios = require ('axios');
 
 // Dependencies
 const passport = require('passport');
-const Auth0Strategy = require('passport-auth0');
 const uid = require('uid-safe');
-const authRoutes = require("./auth-routes");
 
 // existing
 const express = require('express');
