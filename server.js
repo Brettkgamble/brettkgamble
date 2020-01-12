@@ -4,6 +4,8 @@ require ('dotenv').config();
 const express = require('express');
 const next = require('next');
 
+const compression = require('compression');
+
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handle = app.getRequestHandler();
@@ -18,6 +20,7 @@ const robotsOptions = {
 app.prepare()
     .then(() => {
         const server = express();
+        server.use(compression());
 
         server.get('/robots.txt', (req, res) => {
             return res.status(200).sendFile('robots.txt', robotsOptions)
