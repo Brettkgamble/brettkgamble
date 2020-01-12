@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Fab from '@material-ui/core/Fab';
-import ArrowIcon from '@material-ui/icons/keyboardArrowDown';
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
+// import ArrowIcon from '@material-ui/icons/keyboardArrowDown';
 
 import css from './header.module.css';
 
@@ -51,7 +52,7 @@ class HeaderComponent extends Component {
                 <div className={css.scrollDownBtn}>
 
                     <Fab className={css.scrBtn} mini ="true" onClick={this.onScrollToIntro.bind(this)}>
-                        <ArrowIcon />
+                        <KeyboardArrowDownIcon />
                     </Fab>
                 </div>
 
