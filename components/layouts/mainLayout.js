@@ -15,7 +15,7 @@ const MainLayout = (props) => (
         <Head>
              <meta
                 name ="viewport"
-                content="minimim-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
+                content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
             />
             <meta name="description" content="Online resume and portfolio for Brett Gamble" />
             <meta name="keywords" content="Brett Gamble, resume, portfolio, react, nextjs, Edmonton
