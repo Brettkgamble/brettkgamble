@@ -12,11 +12,6 @@ import WorkExperienceLayout2005_2010 from "./workExperienceLayout2005_2010";
 import WorkExperienceLayout1999_2005 from "./workExperienceLayout1999_2005";
 import WorkExperienceLayout1985_1998 from "./workExperienceLayout1985_1998";
 
-const trackingId = "UA-156008837-1";
-ReactGA.initialize(trackingId);
-// ReactGA.pageview(window.location.pathname + window.location.search);
-
-
 const MainLayout = (props) => (
     <>
         <Head>

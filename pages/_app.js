@@ -3,9 +3,19 @@ import App from 'next/app';
 import getConfig from 'next/config';
 import MainLayout from "../components/layouts/mainLayout";
 
+import {initGA, logPageView} from '../utils/analytics';
+
 const { publicRuntimeConfig } = getConfig();
 
 class MyApp extends App {
+
+  componentDidMount () {
+    if (!window.GA_INITIALIZED) {
+      initGA();
+      window.GA_INITIALIZED = true
+    }
+    logPageView()
+  }
 
   static async getInitialProps(appContext) {
 
