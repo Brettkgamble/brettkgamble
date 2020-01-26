@@ -11,6 +11,9 @@ import WorkExperienceLayout2010_Current from "./workExperienceLayout2010_Current
 import WorkExperienceLayout2005_2010 from "./workExperienceLayout2005_2010";
 import WorkExperienceLayout1999_2005 from "./workExperienceLayout1999_2005";
 import WorkExperienceLayout1985_1998 from "./workExperienceLayout1985_1998";
+import Portfolio_apps from "./portfolio_apps";
+import Portfolio_web from "./portfolio_web";
+import Portfolio_data from "./portfolio_data";
 
 const MainLayout = (props) => (
     <>
@@ -56,6 +59,18 @@ const MainLayout = (props) => (
         <SimpleCollapse
             collapseComponent={<WorkExperienceLayout1985_1998/>}
             sectionlabel={'Work Experience 1985 - 1998'}
+        />
+        <SimpleCollapse
+            collapseComponent={<Portfolio_apps/>}
+            sectionlabel={'Portfolio - Applications'}
+        />
+        <SimpleCollapse
+            collapseComponent={<Portfolio_data/>}
+            sectionlabel={'Portfolio - Data'}
+        />
+        <SimpleCollapse
+            collapseComponent={<Portfolio_web/>}
+            sectionlabel={'Portfolio - Websites'}
         />
 
 
