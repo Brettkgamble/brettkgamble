@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import classes from './workExperienceLayout.module.css';
-import Flashbidz from "../Portfolio/flashbidz";
+import Flashbidz from '../Portfolio/flashbidz/flashbidz';
 
 const Portfolio_apps = () => (
     <Fragment >

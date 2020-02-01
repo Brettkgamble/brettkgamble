@@ -1,4 +1,6 @@
 import React from 'react';
+import Link from 'next/link';
+
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import Card from '@material-ui/core/Card';
@@ -13,8 +15,11 @@ import Typography from '@material-ui/core/Typography';
 import { red } from '@material-ui/core/colors';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
+import LinkIcon from '@material-ui/icons/Link';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
+import styleClasses from './flashbidz.module.css';
+import {Icon} from "@material-ui/core";
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -50,11 +55,11 @@ export default function Flashbidz() {
   return (
     <Card className={classes.card}>
       <CardHeader
-        avatar={
-          <Avatar aria-label="recipe" className={classes.avatar}>
-            R
-          </Avatar>
-        }
+        // avatar={
+        //   <Avatar aria-label="recipe" className={classes.avatar}>
+        //     R
+        //   </Avatar>
+        // }
         action={
           <IconButton aria-label="settings">
             <MoreVertIcon />
@@ -64,15 +69,14 @@ export default function Flashbidz() {
         subheader="AI based Used Car recommendations "
       />
       <CardMedia
-        className={classes.media}
-        style={'height: 100px'}
-        image="/static/images/paella.jpg"
+        className={styleClasses.cardMedia}
+        image="/static/images/red_car.png"
         title="Deal Yeti Elusive Deals"
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          This impressive paella is a perfect party dish and a fun meal to cook together with your
-          guests. Add 1 cup of frozen peas along with the mussels, if you like.
+          Uses machine learning to identify and recommend the best available used
+          vehicle available within the current market.
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -81,6 +85,13 @@ export default function Flashbidz() {
         </IconButton>
         <IconButton aria-label="share">
           <ShareIcon />
+        </IconButton>
+        <IconButton aria-label="link">
+          <LinkIcon >
+            <Link href="http://www.google.com">
+              <a>link</a>
+            </Link>
+          </LinkIcon>
         </IconButton>
         <IconButton
           className={clsx(classes.expand, {
@@ -95,28 +106,35 @@ export default function Flashbidz() {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>Method:</Typography>
           <Typography paragraph>
-            Heat 1/2 cup of the broth in a pot until simmering, add saffron and set aside for 10
-            minutes.
+            <strong>Architecture:</strong></Typography>
+          <Typography variant="body1" color="textPrimary" component="ul">
+            <ul className={styleClasses.cardContentUl}>
+              <li>React / Next Frontend</li>
+              <li>Python Endpoints served by Google Application Engine</li>
+              <li>PostgreSql Database</li>
+              <li>Python / Node Cron webcrawlers</li>
+              <li>Python ML recommendation engine</li>
+            </ul>
+
           </Typography>
           <Typography paragraph>
-            Heat oil in a (14- to 16-inch) paella pan or a large, deep skillet over medium-high
-            heat. Add chicken, shrimp and chorizo, and cook, stirring occasionally until lightly
-            browned, 6 to 8 minutes. Transfer shrimp to a large plate and set aside, leaving chicken
-            and chorizo in the pan. Add pimentón, bay leaves, garlic, tomatoes, onion, salt and
-            pepper, and cook, stirring often until thickened and fragrant, about 10 minutes. Add
-            saffron broth and remaining 4 1/2 cups chicken broth; bring to a boil.
+            DealYeti assists used car purchasers by providing real time data to support the decision
+            making process when assessing a used car.
           </Typography>
           <Typography paragraph>
-            Add rice and stir very gently to distribute. Top with artichokes and peppers, and cook
-            without stirring, until most of the liquid is absorbed, 15 to 18 minutes. Reduce heat to
-            medium-low, add reserved shrimp and mussels, tucking them down into the rice, and cook
-            again without stirring, until mussels have opened and rice is just tender, 5 to 7
-            minutes more. (Discard any mussels that don’t open.)
+            Data is sourced using webcrawlers, which are then parsed, cleaned and stored in a PostgreSql
+            database.  The React/Next frontend presents users with a simple but sophisticated search
+            method, that presents data in a highly visual and informative format.  Machine learning is
+            used to provide predictions of pricing trends, vehicle value. Standard statistical
+            analysis is used to visualize information such as vehicle age, price, odometer readings,
+            size of market / availability.
           </Typography>
           <Typography>
-            Set aside off of the heat to let rest for 10 minutes, and then serve.
+            The data is also valuable to dealerships in the form of competitive statistical analysis which
+            can assist the dealership to price competitively and to understand market share.  In addition,
+            the application works as a lead-generator for the dealership, or individual sales consultant who
+            is looking for active, pre-screened leads.
           </Typography>
         </CardContent>
       </Collapse>
