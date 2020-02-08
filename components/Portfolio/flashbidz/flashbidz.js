@@ -80,18 +80,14 @@ export default function Flashbidz() {
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
-        </IconButton>
-        <IconButton aria-label="share">
-          <ShareIcon />
-        </IconButton>
-        <IconButton aria-label="link">
-          <LinkIcon >
-            <Link href="http://www.google.com">
-              <a>link</a>
-            </Link>
-          </LinkIcon>
+        {/*<IconButton aria-label="add to favorites">*/}
+        {/*  <FavoriteIcon />*/}
+        {/*</IconButton>*/}
+        {/*<IconButton aria-label="share">*/}
+        {/*  <ShareIcon />*/}
+        {/*</IconButton>*/}
+        <IconButton aria-label="link" href="https://flashbidz.appspot.com/" target="_blank">
+          <LinkIcon />
         </IconButton>
         <IconButton
           className={clsx(classes.expand, {
