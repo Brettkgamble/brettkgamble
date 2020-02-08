@@ -1,0 +1,15 @@
+.cardMedia {
+    height: 73px;
+    padding-top: 75px;
+}
+
+.cardContentHeading {
+    font-weight: bold;
+}
+
+.cardContentUl {
+    padding-inline-start: 0;
+    padding-bottom: 10px;
+    font-size: 14px;
+    list-style-type: disc;
+}
