@@ -64,15 +64,14 @@ const MainLayout = (props) => (
             collapseComponent={<Portfolio_apps/>}
             sectionlabel={'Portfolio - Applications'}
         />
-        <SimpleCollapse
-            collapseComponent={<Portfolio_data/>}
-            sectionlabel={'Portfolio - Data'}
-        />
-        <SimpleCollapse
-            collapseComponent={<Portfolio_web/>}
-            sectionlabel={'Portfolio - Websites'}
-        />
-
+        {/*<SimpleCollapse*/}
+        {/*    collapseComponent={<Portfolio_data/>}*/}
+        {/*    sectionlabel={'Portfolio - Data'}*/}
+        {/*/>*/}
+        {/*<SimpleCollapse*/}
+        {/*    collapseComponent={<Portfolio_web/>}*/}
+        {/*    sectionlabel={'Portfolio - Websites'}*/}
+        {/*/>*/}
 
     </>
 )
