@@ -86,7 +86,7 @@ export default function Xfit() {
         {/*<IconButton aria-label="share">*/}
         {/*  <ShareIcon />*/}
         {/*</IconButton>*/}
-        <IconButton aria-label="link" href="https://flashbidz.appspot.com/" target="_blank">
+        <IconButton aria-label="link" href="https://affiliatetracker.appspot.com/" target="_blank">
           <LinkIcon />
         </IconButton>
         <IconButton
