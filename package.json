@@ -17,6 +17,7 @@
     "@material-ui/core": "^4.6.1",
     "@material-ui/icons": "^4.5.1",
     "@material/fab": "^4.0.0",
+    "@sanity/client": "^1.149.2",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
     "auth0-js": "^9.11.3",
