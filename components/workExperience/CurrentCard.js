@@ -79,9 +79,10 @@ export default function CurrentCard() {
           <strong>Seeking Employment</strong>
           </Typography>
             <Typography variant="subtitle2" color="textSecondary">
-            <strong>Core Accomplishments</strong>
+            <strong>Core Accomplishments: 2020</strong>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="ul">
+                <li>Udacity: Bertelsmann Tech Scholarship Challenge</li>
                 <li>Udemy: React (with Hooks, Redux, Router)</li>
                 <li>Udemy: CSS - The Complete Guide</li>
             </Typography>
@@ -99,6 +100,9 @@ export default function CurrentCard() {
                 <li>Udemy: Git & GitHub Masterclass</li>
                 <li>Udemy: Web Scraping in Node JS</li>
                 <li>Udemy: 3 Minute French</li>
+                <li>Book: Programmers Guide To Data Mining</li>
+                <li>Book: Hands-on Machine Learning with Scikit-Learn, Keras & Tensorflow</li>
+                <li>Book: Python for Data Analysis</li>
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
                 < br />
